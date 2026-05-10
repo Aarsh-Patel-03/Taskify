@@ -1,29 +1,40 @@
 {
   "expo": {
-    "name": "todo-app",
-    "slug": "todo-app",
+    "name": "Taskify",
+    "slug": "taskify",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aarsh03.taskify",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.aarsh03.todoapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "owner": "aarsh03",
+    "extra": {
+      "eas": {
+        "projectId": "bf70dcdf-9282-41cc-97a2-f2f9f06e80f1"
+      }
     }
   }
 }
